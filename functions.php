@@ -3,6 +3,9 @@
 $wp_ver = substr($GLOBALS['wp_version'],0,3);
 if ($wp_ver >= 2.8) include(TEMPLATEPATH . '/includes/widgets.php');
 
+//adiciona o repositorio
+include(TEMPLATEPATH . '/functions/updater.php');
+
 include(TEMPLATEPATH . '/includes/sidebars.php');
 //require_once(TEMPLATEPATH . '/includes/page_templates/page_templates.php');
 
